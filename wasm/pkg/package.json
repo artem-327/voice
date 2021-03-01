@@ -1,0 +1,15 @@
+{
+  "name": "pitch-detection-wasm",
+  "collaborators": [
+    "Alessandro Genova <ales.genova@gmail.com>"
+  ],
+  "version": "0.2.0",
+  "files": [
+    "pitch_detection_wasm_bg.wasm",
+    "pitch_detection_wasm.js",
+    "pitch_detection_wasm.d.ts"
+  ],
+  "module": "pitch_detection_wasm.js",
+  "types": "pitch_detection_wasm.d.ts",
+  "sideEffects": false
+}
