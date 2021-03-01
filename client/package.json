@@ -1,7 +1,6 @@
 {
   "name": "client",
   "version": "0.1.0",
-  "homepage": "http://alesgenova.github.io/pitch-detection-app",
   "license": "MIT",
   "private": true,
   "dependencies": {
