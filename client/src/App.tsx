@@ -1,8 +1,9 @@
 import React from 'react';
 
 import PitchComponent from './components/pitch';
-import { PitchMonitor } from './components/pitch/pitch-monitor';
+import ReactChart from './components/react-chart';
 import { CircleChart } from './components/circle-chart/circle-chat';
+import { PitchMonitor } from './components/pitch/pitch-monitor';
 import { AppFrame } from './components/main/app-frame';
 import { useStoreActions, useStoreState } from './model';
 import { About } from './components/main/about';
@@ -34,8 +35,7 @@ function App() {
 
   let mainDisplay = <About />;
   if (loaded && stream && workerConnection) {
-    const pitchRenderer =
-      displayType === 'circle' ? CircleChart : PitchComponent;
+    const pitchRenderer = displayType === 'circle' ? CircleChart : displayType === 'react' ? ReactChart : PitchComponent;
     mainDisplay = (
       <PitchMonitor
         stream={stream}

@@ -108,6 +108,7 @@ export function SelectDisplayType() {
       choices={[
         { value: 'chart', desc: 'Linear Chart' },
         { value: 'circle', desc: 'Circle Chart' },
+        { value: 'react', desc: 'React Chart' },
       ]}
     />
   );
